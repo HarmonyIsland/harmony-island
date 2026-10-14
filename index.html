@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Harmony Island | Songs, Stories, Learning & Adventure</title>
-  <meta name="description" content="Welcome to Harmony Island with Heaven. Explore songs, animations, bedtime stories, animals, history, vocabulary, Baby Mira, Shorts and more.">
+  <meta name="description" content="Welcome to Harmony Island with Heaven and Sari. Explore songs, animations, bedtime stories, animals, history, vocabulary, Baby Mira and more.">
   <meta name="theme-color" content="#12233c">
   <meta property="og:title" content="Harmony Island">
   <meta property="og:description" content="Where every adventure begins.">
@@ -32,9 +32,7 @@
       padding: 0;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       font-family: Inter, ui-sans-serif, system-ui, -apple-system,
@@ -45,19 +43,9 @@
       overflow-x: hidden;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    button, a {
-      -webkit-tap-highlight-color: transparent;
-    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    button, a { -webkit-tap-highlight-color: transparent; }
 
     .container {
       width: min(1160px, 92%);
@@ -83,13 +71,13 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(18,35,60,.92);
+      background: rgba(18,35,60,.94);
       backdrop-filter: blur(14px);
       border-bottom: 1px solid rgba(231,190,98,.2);
     }
 
     .nav {
-      height: 76px;
+      min-height: 76px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -115,26 +103,22 @@
       border: 2px solid var(--gold);
     }
 
-    .brand span {
-      font-size: 1.05rem;
-    }
+    .brand span { font-size: 1.05rem; }
 
     .nav-links {
       display: flex;
-      gap: 1.2rem;
+      gap: 1.1rem;
       align-items: center;
     }
 
     .nav-links a {
       color: #f8fbff;
-      font-size: .95rem;
+      font-size: .92rem;
       font-weight: 650;
-      opacity: .9;
+      opacity: .92;
     }
 
-    .nav-links a:hover {
-      color: var(--gold-2);
-    }
+    .nav-links a:hover { color: var(--gold-2); }
 
     .menu {
       display: none;
@@ -152,14 +136,12 @@
       display: flex;
       align-items: center;
       overflow: hidden;
-      background:
-        linear-gradient(
-          180deg,
-          rgba(121,201,230,.88) 0%,
-          rgba(191,231,239,.9) 50%,
-          rgba(246,231,200,.94) 100%
-        ),
-        url('images/hero.jpg') center/cover no-repeat;
+      background: linear-gradient(
+        180deg,
+        rgba(121,201,230,.9) 0%,
+        rgba(191,231,239,.94) 50%,
+        rgba(246,231,200,.97) 100%
+      );
     }
 
     .hero::before {
@@ -185,12 +167,8 @@
       border-radius: 50%;
       right: 8%;
       top: 10%;
-      background: radial-gradient(
-        circle at 35% 35%,
-        #fff8ca,
-        #f7d77b 55%,
-        #e9b849
-      );
+      background: radial-gradient(circle at 35% 35%,
+        #fff8ca, #f7d77b 55%, #e9b849);
       box-shadow: 0 0 70px rgba(255,225,129,.65);
       opacity: .92;
     }
@@ -205,8 +183,7 @@
       height: 30px;
     }
 
-    .cloud::before,
-    .cloud::after {
+    .cloud::before, .cloud::after {
       content: "";
       position: absolute;
       background: inherit;
@@ -248,9 +225,7 @@
     }
 
     @keyframes drift {
-      50% {
-        transform: translateX(38px);
-      }
+      50% { transform: translateX(38px); }
     }
 
     .hero-grid {
@@ -311,28 +286,11 @@
       box-shadow: 0 10px 25px rgba(18,35,60,.12);
     }
 
-    .btn:hover {
-      transform: translateY(-2px);
-    }
-
-    .btn-primary {
-      background: var(--navy);
-      color: #fff;
-    }
-
-    .btn-primary:hover {
-      background: #0c1a2a;
-    }
-
-    .btn-gold {
-      background: var(--gold);
-      color: var(--navy);
-    }
-
-    .btn-light {
-      background: #fff;
-      color: var(--navy);
-    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: var(--navy); color: #fff; }
+    .btn-primary:hover { background: #0c1a2a; }
+    .btn-gold { background: var(--gold); color: var(--navy); }
+    .btn-light { background: #fff; color: var(--navy); }
 
     .hero-art {
       position: relative;
@@ -351,8 +309,7 @@
       height: 180px;
       border-radius: 50% 50% 35% 35%;
       background: linear-gradient(#89c96a,#4d9d52);
-      box-shadow:
-        0 24px 0 rgba(24,97,93,.2),
+      box-shadow: 0 24px 0 rgba(24,97,93,.2),
         0 40px 60px rgba(16,74,87,.28);
     }
 
@@ -363,14 +320,8 @@
       height: 230px;
     }
 
-    .palm.left {
-      left: 8%;
-    }
-
-    .palm.right {
-      right: 8%;
-      transform: scaleX(-1);
-    }
+    .palm.left { left: 8%; }
+    .palm.right { right: 8%; transform: scaleX(-1); }
 
     .trunk {
       position: absolute;
@@ -453,10 +404,7 @@
     .s4 { bottom: 24%; right: 25%; animation-delay: 1.8s; }
 
     @keyframes twinkle {
-      50% {
-        transform: scale(1.45) rotate(12deg);
-        opacity: .55;
-      }
+      50% { transform: scale(1.45) rotate(12deg); opacity: .55; }
     }
 
     .wave {
@@ -471,12 +419,9 @@
         radial-gradient(100px 44px at 56% 45%,#fff 0 60%,transparent 61%),
         radial-gradient(120px 45px at 80% 34%,#fff 0 60%,transparent 61%);
       opacity: .82;
-      filter: blur(.2px);
     }
 
-    section {
-      padding: 6rem 0;
-    }
+    section { padding: 6rem 0; }
 
     .section-head {
       display: flex;
@@ -524,9 +469,7 @@
       transition: .25s ease;
     }
 
-    .card:hover {
-      transform: translateY(-6px);
-    }
+    .card:hover { transform: translateY(-6px); }
 
     .playlist-card {
       min-height: 210px;
@@ -566,9 +509,7 @@
       gap: .3rem;
     }
 
-    .about {
-      background: #fff;
-    }
+    .about { background: #fff; }
 
     .about-grid {
       display: grid;
@@ -581,7 +522,7 @@
       border-radius: 36px;
       overflow: hidden;
       background: linear-gradient(180deg,#dff3f5,#fff1cf);
-      min-height: 520px;
+      min-height: 440px;
       display: flex;
       align-items: end;
       justify-content: center;
@@ -591,6 +532,7 @@
 
     .portrait img {
       width: min(420px,90%);
+      max-height: 560px;
       object-fit: contain;
     }
 
@@ -599,9 +541,7 @@
       color: #50677b;
     }
 
-    .about-copy p + p {
-      margin-top: 1rem;
-    }
+    .about-copy p + p { margin-top: 1rem; }
 
     .pill-row {
       display: flex;
@@ -619,15 +559,15 @@
       font-size: .86rem;
     }
 
+    .characters { background: linear-gradient(180deg,#f6efd9,#fff); }
+
     .channels {
       background: var(--navy);
       color: #fff;
     }
 
     .channels .section-head h2,
-    .channels .section-head p {
-      color: #fff;
-    }
+    .channels .section-head p { color: #fff; }
 
     .channel-grid {
       display: grid;
@@ -653,9 +593,7 @@
       margin-bottom: 1rem;
     }
 
-    .cta {
-      background: linear-gradient(135deg,#f6ebcf,#d6f1ee);
-    }
+    .cta { background: linear-gradient(135deg,#f6ebcf,#d6f1ee); }
 
     .cta-box {
       display: grid;
@@ -693,9 +631,7 @@
       flex-wrap: wrap;
     }
 
-    .footer-links a:hover {
-      color: var(--gold-2);
-    }
+    .footer-links a:hover { color: var(--gold-2); }
 
     .reveal {
       opacity: 0;
@@ -709,26 +645,11 @@
     }
 
     @media (max-width: 1000px) {
-      .grid {
-        grid-template-columns: repeat(3,1fr);
-      }
-
-      .hero-grid,
-      .about-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-art {
-        min-height: 500px;
-      }
-
-      .channel-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .cta-box {
-        grid-template-columns: 1fr;
-      }
+      .grid { grid-template-columns: repeat(3,1fr); }
+      .hero-grid, .about-grid { grid-template-columns: 1fr; }
+      .hero-art { min-height: 500px; }
+      .channel-grid { grid-template-columns: 1fr; }
+      .cta-box { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 760px) {
@@ -745,37 +666,14 @@
         border-top: 1px solid rgba(255,255,255,.08);
       }
 
-      .nav-links.open {
-        display: flex;
-      }
-
-      .menu {
-        display: block;
-      }
-
-      .grid {
-        grid-template-columns: repeat(2,1fr);
-      }
-
-      .hero-grid {
-        padding: 4.5rem 0 7rem;
-      }
-
-      .hero-art {
-        min-height: 450px;
-      }
-
-      .palm {
-        transform: scale(.78);
-      }
-
-      .palm.right {
-        transform: scaleX(-1) scale(.78);
-      }
-
-      section {
-        padding: 4.5rem 0;
-      }
+      .nav-links.open { display: flex; }
+      .menu { display: block; }
+      .grid { grid-template-columns: repeat(2,1fr); }
+      .hero-grid { padding: 4.5rem 0 7rem; }
+      .hero-art { min-height: 450px; }
+      .palm { transform: scale(.78); }
+      .palm.right { transform: scaleX(-1) scale(.78); }
+      section { padding: 4.5rem 0; }
 
       .section-head {
         align-items: start;
@@ -789,50 +687,20 @@
     }
 
     @media (max-width: 520px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-art {
-        min-height: 390px;
-      }
-
-      .heaven {
-        width: min(350px,86vw);
-      }
-
-      .island {
-        height: 120px;
-      }
-
-      .palm {
-        bottom: 25%;
-        transform: scale(.55);
-      }
-
-      .palm.right {
-        transform: scaleX(-1) scale(.55);
-      }
-
-      .sun {
-        width: 80px;
-        height: 80px;
-      }
-
-      .actions {
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .btn {
-        width: 100%;
-      }
+      .grid { grid-template-columns: 1fr; }
+      .hero-art { min-height: 390px; }
+      .heaven { width: min(350px,86vw); }
+      .island { height: 120px; }
+      .palm { bottom: 25%; transform: scale(.55); }
+      .palm.right { transform: scaleX(-1) scale(.55); }
+      .sun { width: 80px; height: 80px; }
+      .actions { flex-direction: column; align-items: stretch; }
+      .btn { width: 100%; }
+      .portrait { min-height: 340px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      *,
-      *::before,
-      *::after {
+      *, *::before, *::after {
         animation: none !important;
         scroll-behavior: auto !important;
         transition: none !important;
@@ -847,28 +715,22 @@
   <header>
     <div class="container nav">
       <a class="brand" href="#home" aria-label="Harmony Island home">
-        <img
-          class="brand-mark"
-          src="images/harmony-logo.png"
-          alt="Harmony Island logo"
-          onerror="this.style.display='none'"
-        >
+        <img class="brand-mark"
+             src="images/harmony-logo.png"
+             alt="Harmony Island logo"
+             onerror="this.style.display='none'">
         <span>Harmony Island</span>
       </a>
 
-      <button
-        class="menu"
-        id="menuBtn"
-        aria-expanded="false"
-        aria-controls="navLinks"
-        aria-label="Open menu"
-      >☰</button>
+      <button class="menu" id="menuBtn" aria-expanded="false"
+              aria-controls="navLinks" aria-label="Open menu">☰</button>
 
       <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
         <a href="#home">Home</a>
         <a href="#playlists">Playlists</a>
         <a href="#heaven">Heaven</a>
         <a href="#about">About</a>
+        <a href="#sari">Sari</a>
         <a href="#channels">Channels</a>
       </nav>
     </div>
@@ -885,12 +747,18 @@
         <div class="reveal">
           <div class="eyebrow">✦ Where every adventure begins</div>
           <h1>Welcome to Harmony Island</h1>
-          <p>Join Heaven for songs, stories, learning, discovery, imagination and adventures across a magical island made for curious families.</p>
+          <p>Join Heaven and Sari for songs, stories, learning, discovery, imagination and adventures across a magical island made for curious families.</p>
 
           <div class="actions">
-            <a class="btn btn-primary" href="https://www.youtube.com/@HarmonyIsland-2024" target="_blank" rel="noopener">▶ Subscribe on YouTube</a>
-            <a class="btn btn-gold" href="https://www.youtube.com/@HarmonyIsland-2024/videos" target="_blank" rel="noopener">🎬 Watch Videos</a>
-            <a class="btn btn-light" href="https://www.youtube.com/@TunesMania" target="_blank" rel="noopener">🎵 Visit Tunes Mania</a>
+            <a class="btn btn-primary"
+               href="https://www.youtube.com/@HarmonyIsland-2024"
+               target="_blank" rel="noopener">▶ Subscribe on YouTube</a>
+            <a class="btn btn-gold"
+               href="https://www.youtube.com/@HarmonyIsland-2024/videos"
+               target="_blank" rel="noopener">🎬 Watch Videos</a>
+            <a class="btn btn-light"
+               href="https://www.youtube.com/@TunesMania"
+               target="_blank" rel="noopener">🎵 Visit Tunes Mania</a>
           </div>
         </div>
 
@@ -899,12 +767,10 @@
             <div class="trunk"></div>
             <div class="fronds"><i></i><i></i><i></i><i></i></div>
           </div>
-
           <div class="palm right">
             <div class="trunk"></div>
             <div class="fronds"><i></i><i></i><i></i><i></i></div>
           </div>
-
           <div class="island"></div>
 
           <div class="sparkle s1">✦</div>
@@ -913,104 +779,109 @@
           <div class="sparkle s4">✧</div>
 
           <div class="heaven">
-            <img
-              src="images/heaven.png"
-              alt="Heaven, the main character of Harmony Island"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
-            >
+            <img src="images/imagesheavenpng.jpg"
+                 alt="Heaven in her blue princess outfit"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
             <div class="heaven-fallback">
               Heaven<br>
-              <small>Add your Heaven PNG as <b>images/heaven.png</b></small>
+              <small>Please check that images/imagesheavenpng.jpg is uploaded.</small>
             </div>
           </div>
         </div>
       </div>
-
       <div class="wave"></div>
     </section>
 
-    
-<article class="card playlist-card reveal">
-  <div><div class="icon">🔤</div><h3>ABC 123 Adventures</h3><p>Discover letters, numbers, and learning adventures.</p></div>
-  <a href="https://www.youtube.com/playlist?list=PLcTTNUB4Br6g" target="_blank" rel="noopener">Watch Playlist →</a>
-</article>
+    <section class="playlists" id="playlists">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="kicker">Explore the island</div>
+            <h2>Choose Your Next Adventure</h2>
+          </div>
+          <p>Find songs, stories, learning adventures, characters, and more in the Harmony Island playlist collection.</p>
+        </div>
 
-<article class="card playlist-card reveal">
-  <div><div class="icon">🎭</div><h3>Heaven &amp; Sari Comics Club</h3><p>Join Heaven and Sari for comic-style adventures.</p></div>
-  <a href="https://www.youtube.com/playlist?list=PLXU2hwv2KQQQ" target="_blank" rel="noopener">Watch Playlist →</a>
-</article>
+        <div class="grid">
+          <article class="card playlist-card reveal">
+            <div><div class="icon">🔤</div><h3>ABC 123 Adventures</h3><p>Discover letters, numbers, and learning adventures.</p></div>
+            <a href="https://www.youtube.com/playlist?list=PLcTTNUB4Br6g" target="_blank" rel="noopener">Watch Playlist →</a>
+          </article>
 
-<article class="card playlist-card reveal">
-  <div><div class="icon">🎵</div><h3>Songs</h3><p>Sing, dance and enjoy musical adventures.</p></div>
-  <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecMJcyslepVVs-pxIDbI1FCZ" target="_blank" rel="noopener">Watch Playlist →</a>
-</article>
+          <article class="card playlist-card reveal">
+            <div><div class="icon">🎭</div><h3>Heaven &amp; Sari Comics Club</h3><p>Join Heaven and Sari for comic-style adventures.</p></div>
+            <a href="https://www.youtube.com/playlist?list=PLXU2hwv2KQQQ" target="_blank" rel="noopener">Watch Playlist →</a>
+          </article>
 
-<article class="card playlist-card reveal">
-  <div><div class="icon">🎬</div><h3>Animations</h3><p>Magical animated stories and adventures.</p></div>
-  <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecOq7jid147sYVWff1QIh_wL" target="_blank" rel="noopener">Watch Playlist →</a>
-</article>
+          <article class="card playlist-card reveal">
+            <div><div class="icon">🎵</div><h3>Songs</h3><p>Sing, dance and enjoy musical adventures.</p></div>
+            <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecMJcyslepVVs-pxIDbI1FCZ" target="_blank" rel="noopener">Watch Playlist →</a>
+          </article>
 
-<article class="card playlist-card reveal">
-  <div><div class="icon">🌙</div><h3>Bedtime Stories</h3><p>Gentle stories for peaceful evenings.</p></div>
-  <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecMq41M6v_vr5bNVvimsJAnX" target="_blank" rel="noopener">Watch Playlist →</a>
-</article>
+          <article class="card playlist-card reveal">
+            <div><div class="icon">🎬</div><h3>Animations</h3><p>Magical animated stories and adventures.</p></div>
+            <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecOq7jid147sYVWff1QIh_wL" target="_blank" rel="noopener">Watch Playlist →</a>
+          </article>
 
-<article class="card playlist-card reveal">
-  <div><div class="icon">🎂</div><h3>Birthdays</h3><p>Celebrate special days with music and fun.</p></div>
-  <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecNdeeDmHePLauqlAm_qKkto" target="_blank" rel="noopener">Watch Playlist →</a>
-</article>
+          <article class="card playlist-card reveal">
+            <div><div class="icon">🌙</div><h3>Bedtime Stories</h3><p>Gentle stories for peaceful evenings.</p></div>
+            <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecMq41M6v_vr5bNVvimsJAnX" target="_blank" rel="noopener">Watch Playlist →</a>
+          </article>
 
-<article class="card playlist-card reveal">
-  <div><div class="icon">🧠</div><h3>15 Psychology Secrets</h3><p>Curiosity-driven learning for families.</p></div>
-  <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecPuFR11Et9voZHiFxjOxzXL" target="_blank" rel="noopener">Watch Playlist →</a>
-</article>
+          <article class="card playlist-card reveal">
+            <div><div class="icon">🎂</div><h3>Birthdays</h3><p>Celebrate special days with music and fun.</p></div>
+            <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecNdeeDmHePLauqlAm_qKkto" target="_blank" rel="noopener">Watch Playlist →</a>
+          </article>
 
-<article class="card playlist-card reveal">
-  <div><div class="icon">🦁</div><h3>Meet the Animals</h3><p>Discover amazing animals from around the world.</p></div>
-  <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecNAcx8qaHxof4nr49CkIGwt" target="_blank" rel="noopener">Watch Playlist →</a>
-</article>
+          <article class="card playlist-card reveal">
+            <div><div class="icon">🧠</div><h3>15 Psychology Secrets</h3><p>Curiosity-driven learning for families.</p></div>
+            <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecPuFR11Et9voZHiFxjOxzXL" target="_blank" rel="noopener">Watch Playlist →</a>
+          </article>
 
-<article class="card playlist-card reveal">
-  <div><div class="icon">🏛️</div><h3>Talk to History</h3><p>Travel through history and meet fascinating stories.</p></div>
-  <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecPFCU6n-7-0jVZGDklQ_1dB" target="_blank" rel="noopener">Watch Playlist →</a>
-</article>
+          <article class="card playlist-card reveal">
+            <div><div class="icon">🦁</div><h3>Meet the Animals</h3><p>Discover amazing animals from around the world.</p></div>
+            <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecNAcx8qaHxof4nr49CkIGwt" target="_blank" rel="noopener">Watch Playlist →</a>
+          </article>
 
-<article class="card playlist-card reveal">
-  <div><div class="icon">📚</div><h3>Vocabulary Voyage</h3><p>Explore words and build English vocabulary.</p></div>
-  <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecMUtDzUAS2OOpaADAgyxi6B" target="_blank" rel="noopener">Watch Playlist →</a>
-</article>
+          <article class="card playlist-card reveal">
+            <div><div class="icon">🏛️</div><h3>Talk to History</h3><p>Travel through history and meet fascinating stories.</p></div>
+            <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecPFCU6n-7-0jVZGDklQ_1dB" target="_blank" rel="noopener">Watch Playlist →</a>
+          </article>
 
-<article class="card playlist-card reveal">
-  <div><div class="icon">👶</div><h3>Baby Mira</h3><p>Gentle content created for younger viewers.</p></div>
-  <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecPaqsGmnUwQerAOYKc2QK-L" target="_blank" rel="noopener">Watch Playlist →</a>
-</article>
+          <article class="card playlist-card reveal">
+            <div><div class="icon">📚</div><h3>Vocabulary Voyage</h3><p>Explore words and build English vocabulary.</p></div>
+            <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecMUtDzUAS2OOpaADAgyxi6B" target="_blank" rel="noopener">Watch Playlist →</a>
+          </article>
 
-<article class="card playlist-card reveal">
-  <div><div class="icon">🔍</div><h3>The Chronicles of the Case</h3><p>Mystery and adventure for curious minds.</p></div>
-  <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecNh1s91yuRB6ktDwHytGYMs" target="_blank" rel="noopener">Watch Playlist →</a>
-</article>
+          <article class="card playlist-card reveal">
+            <div><div class="icon">👶</div><h3>Baby Mira</h3><p>Gentle content created for younger viewers.</p></div>
+            <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecPaqsGmnUwQerAOYKc2QK-L" target="_blank" rel="noopener">Watch Playlist →</a>
+          </article>
 
-<article class="card playlist-card reveal">
-  <div><div class="icon">🎥</div><h3>Shorts</h3><p>Quick moments of fun and discovery.</p></div>
-  <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecNsZX8BI9iuCOWUah32PKU3" target="_blank" rel="noopener">Watch Playlist →</a>
-</article>
+          <article class="card playlist-card reveal">
+            <div><div class="icon">🔍</div><h3>The Chronicles of the Case</h3><p>Mystery and adventure for curious minds.</p></div>
+            <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecNh1s91yuRB6ktDwHytGYMs" target="_blank" rel="noopener">Watch Playlist →</a>
+          </article>
 
-<article class="card playlist-card reveal">
-  <div><div class="icon">🍎</div><h3>Where Food Comes to Life</h3><p>Explore the world of food.</p></div>
-  <a href="https://www.youtube.com/playlist?list=PLdQSktneGcoI" target="_blank" rel="noopener">Watch Playlist →</a>
-</article>
+          <article class="card playlist-card reveal">
+            <div><div class="icon">🎥</div><h3>Shorts</h3><p>Quick moments of fun and discovery.</p></div>
+            <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecNsZX8BI9iuCOWUah32PKU3" target="_blank" rel="noopener">Watch Playlist →</a>
+          </article>
 
-<article class="card playlist-card reveal">
-  <div><div class="icon">🎙️</div><h3>Podcast with Cartoon Heroes</h3><p>Discover the cartoon heroes podcast.</p></div>
-  <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecP7w2Ldpu2RCUOXKM9ybIjv" target="_blank" rel="noopener">Watch Playlist →</a>
-</article>
+          <article class="card playlist-card reveal">
+            <div><div class="icon">🍎</div><h3>Where Food Comes to Life</h3><p>Explore the world of food.</p></div>
+            <a href="https://www.youtube.com/playlist?list=PLdQSktneGcoI" target="_blank" rel="noopener">Watch Playlist →</a>
+          </article>
 
-<article class="card playlist-card reveal">
-  <div><div class="icon">⚽</div><h3>Gratitude and World Cup</h3><p>Explore gratitude and football-themed adventures.</p></div>
-  <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecO9IC5OnlVgr6g0i9zleASz" target="_blank" rel="noopener">Watch Playlist →</a>
-</article>
+          <article class="card playlist-card reveal">
+            <div><div class="icon">🎙️</div><h3>Podcast with Cartoon Heroes</h3><p>Discover the cartoon heroes podcast.</p></div>
+            <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecP7w2Ldpu2RCUOXKM9ybIjv" target="_blank" rel="noopener">Watch Playlist →</a>
+          </article>
 
-
+          <article class="card playlist-card reveal">
+            <div><div class="icon">⚽</div><h3>Gratitude and World Cup</h3><p>Explore gratitude and football-themed adventures.</p></div>
+            <a href="https://www.youtube.com/playlist?list=PLTCGQRJgfecO9IC5OnlVgr6g0i9zleASz" target="_blank" rel="noopener">Watch Playlist →</a>
+          </article>
         </div>
       </div>
     </section>
@@ -1018,13 +889,14 @@
     <section class="about" id="about">
       <div class="container about-grid">
         <div class="portrait reveal">
-          <img src="images/heaven.png" alt="Heaven in a blue outfit" onerror="this.style.display='none'">
+          <img src="images/imagesheavenpng.jpg"
+               alt="Heaven in her blue princess outfit"
+               onerror="this.style.display='none'">
         </div>
 
         <div class="about-copy reveal">
           <div class="kicker">Meet the guide</div>
           <h2 style="font-size:clamp(2.2rem,4vw,3.5rem);line-height:1.05;color:var(--navy);margin:.5rem 0 1rem">Meet Heaven</h2>
-
           <p>Heaven is the main character and friendly guide of Harmony Island. She welcomes children into a world of music, stories, learning and discovery.</p>
           <p>As the channel grows, Heaven can lead new adventures, introduce island friends and help families discover a growing library of videos.</p>
 
@@ -1042,12 +914,39 @@
       </div>
     </section>
 
+    <section class="characters" id="sari">
+      <div class="container about-grid">
+        <div class="portrait reveal">
+          <img src="images/imagessaripng.png"
+               alt="Sari in a red shirt, jeans, and red shoes"
+               onerror="this.style.display='none'">
+        </div>
+
+        <div class="about-copy reveal">
+          <div class="kicker">Meet another island friend</div>
+          <h2 style="font-size:clamp(2.2rem,4vw,3.5rem);line-height:1.05;color:var(--navy);margin:.5rem 0 1rem">Meet Sari</h2>
+          <p>Sari joins the Harmony Island world of characters and adventures.</p>
+          <p>Explore Heaven and Sari together in the Heaven &amp; Sari Comics Club playlist.</p>
+
+          <div class="pill-row">
+            <span class="pill">🎭 Comics</span>
+            <span class="pill">🌟 Characters</span>
+            <span class="pill">🏝️ Adventures</span>
+          </div>
+
+          <div class="actions" style="margin-top:1.5rem">
+            <a class="btn btn-primary" href="https://www.youtube.com/playlist?list=PLXU2hwv2KQQQ" target="_blank" rel="noopener">Visit Comics Club →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="channels" id="channels">
       <div class="container">
         <div class="section-head reveal">
           <div>
             <div class="kicker" style="color:var(--gold-2)">Stay connected</div>
-            <h2>Your Harmony Island worlds</h2>
+            <h2>Your Harmony Island Worlds</h2>
           </div>
           <p>Two channels, one growing family of stories, music, learning and fun.</p>
         </div>
@@ -1115,23 +1014,28 @@
       menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     });
 
-    navLinks.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
         navLinks.classList.remove('open');
         menuBtn.setAttribute('aria-expanded', 'false');
         menuBtn.setAttribute('aria-label', 'Open menu');
       });
     });
 
-    const obs = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('show');
-        }
-      });
-    }, { threshold: .12 });
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: .12 });
 
-    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    } else {
+      document.querySelectorAll('.reveal').forEach(el => el.classList.add('show'));
+    }
 
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
